@@ -1,8 +1,11 @@
 import bg from './bg.jpeg'
+import blue from './blue.jpeg'
+import flame from './flame.jpeg'
+import gradientImg from './gradient.jpeg'
 import Logo from './logo.svg'
-import Logo2 from './logo2.svg'
-import nero from './nero.jpeg'
+import pinkblack from './pinkblack.jpeg'
 
 
-export { bg, Logo, Logo2, nero }
+
+export { bg, blue, flame, gradientImg, Logo, pinkblack }
 
