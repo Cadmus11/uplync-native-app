@@ -4,7 +4,7 @@
     "slug": "shard",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/logo.svg",
+    "icon": "./assets/images/shard.png",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
@@ -13,9 +13,9 @@
     "android": {
       "adaptiveIcon": {
         "backgroundColor": "#000000",
-        "foregroundImage": "./assets/images/logo.svg",
+        "foregroundImage": "./assets/images/shard.png",
         "backgroundImage": "./assets/images/flame.jpeg",
-        "monochromeImage": "./assets/images/logo.svg"
+        "monochromeImage": "./assets/images/shard.png"
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false
@@ -23,7 +23,7 @@
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/images/logo.svg"
+      "favicon": "./assets/images/shard.png"
     },
     "plugins": [
       "expo-router",
@@ -33,12 +33,12 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/logo.svg",
+          "image": "./assets/images/shard.png",
           "imageWidth": 200,
           "resizeMode": "contain",
-          "backgroundColor": "#000000",
+          "backgroundColor": "#fff",
           "dark": {
-            "backgroundColor": "#000000"
+            "backgroundColor": "#def"
           }
         }
       ]

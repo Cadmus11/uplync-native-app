@@ -1,0 +1,33 @@
+
+
+<svg
+   width="120"
+   height="120"
+   viewBox="0 0 120 120"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1">
+    <path
+       id="path4"
+       style="fill:#66ff00"
+       d="m 59.992838,13.318726 0.01,0.308594 -13.98633,25.707032 3.12305,3.205078 -3.12305,3.205078 13.98633,25.707036 -0.01,0.30859 0.16016,-0.1582 0.0117,0.01 v -0.0215 l 12.93554,-25.697488 -2.83789,-3.353516 2.83789,-3.353516 -12.93554,-25.697266 v -0.02148 l -0.0117,0.0098 z m 0.0879,3.041016 0.29883,26.179688 -0.29883,26.17969 -0.30664,-26.17969 z" />
+    <path
+       id="use2"
+       style="fill:#1a1a1a"
+       d="m 31.752518,22.454073 v 30.208984 l 28.251955,28.251947 v 0.14844 L 88.256423,52.811497 V 22.602511 l -28.25195,28.251956 v -0.14844 z" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Impact;-inkscape-font-specification:'Impact, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#00ff00"
+       x="44.648415"
+       y="92.189651"
+       id="text5"><tspan
+         id="tspan5"
+         x="44.648415"
+         y="92.189651">Shard</tspan></text>
+  </g>
+</svg>
