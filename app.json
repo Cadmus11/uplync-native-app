@@ -1,6 +1,7 @@
 {
   "expo": {
     "name": "Shard",
+    "scheme": "shard",
     "slug": "shard",
     "version": "1.0.0",
     "orientation": "portrait",

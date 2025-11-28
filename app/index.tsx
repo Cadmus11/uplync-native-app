@@ -2,12 +2,14 @@ import { useRouter } from 'expo-router';
 import React from 'react';
 import { Image, ImageBackground, Text, TouchableOpacity, View } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { ThemeProvider } from '../context/ThemeContext';
 import './globals.css';
 
  
 export default function Index() {
   const router = useRouter();
   return (
+    <ThemeProvider>
  <SafeAreaProvider>
  <View
   
@@ -47,6 +49,7 @@ export default function Index() {
     
     </View>
  </SafeAreaProvider>
+ </ThemeProvider>
 
   );
 }
