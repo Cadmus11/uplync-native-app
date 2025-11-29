@@ -1,13 +1,16 @@
-
-
+import { Heart, PlusCircle, User, Users } from 'lucide-react-native'
 
 export const tabData = [{
-        title: "community"
+        title: "community",
+        Icon: Users
     },{
-        title: 'search'
+        title: 'favorites',
+        Icon: Heart
     },{
-        title: 'create'
+        title: 'create',
+        Icon: PlusCircle
     },{
-        title: 'profile'
+        title: 'profile',
+        Icon: User
     }
 ]

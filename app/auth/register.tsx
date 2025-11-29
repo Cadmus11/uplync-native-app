@@ -1,53 +1,78 @@
+import { useRouter } from 'expo-router'
 import React from 'react'
-import { Text, TextInput, View } from 'react-native'
+import { Text, TextInput, TouchableOpacity, View } from 'react-native'
 
 const register = () => {
+
+  const router = useRouter()
   return (
-    <View>
-      <Text style={{fontSize: 24, fontWeight: 'bold', marginBottom: 20, textAlign: 'center'}}>Register</Text>
-      
-      <View style={{marginBottom: 15}}>
-        <Text style={{marginBottom: 5, fontSize: 16}}>Full Name</Text>
-        <TextInput
-          style={{borderWidth: 1, borderColor: '#ccc', padding: 10, borderRadius: 5}}
-          placeholder="Enter your full name"
-        />
-      </View>
+    <View className='flex flex-col p-4 justify-center items-center h-full bg-slate-200 dark:bg-slate-950 dark:text-white w-screen'>
+      <View className='w-full p-6 bg-white dark:bg-slate-800 rounded-lg shadow-lg'>
+        <Text className='text-2xl font-bold text-center mb-6 text-gray-800 dark:text-white'>
+          Register
+        </Text>
+        
+        <View className='mb-4'>
+          <Text className='text-sm font-medium mb-2 text-gray-700 dark:text-gray-300'>
+            Full Name
+          </Text>
+          <TextInput
+            className='w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-slate-700 text-gray-800 dark:text-white'
+            placeholder='Enter your full name'
+            placeholderTextColor='#9CA3AF'
+          />
+        </View>
 
-      <View style={{marginBottom: 15}}>
-        <Text style={{marginBottom: 5, fontSize: 16}}>Email</Text>
-        <TextInput
-          style={{borderWidth: 1, borderColor: '#ccc', padding: 10, borderRadius: 5}}
-          placeholder="Enter your email"
-          keyboardType="email-address"
-        />
-      </View>
+        <View className='mb-4'>
+          <Text className='text-sm font-medium mb-2 text-gray-700 dark:text-gray-300'>
+            Email
+          </Text>
+          <TextInput
+            className='w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-slate-700 text-gray-800 dark:text-white'
+            placeholder='Enter your email'
+            placeholderTextColor='#9CA3AF'
+            keyboardType='email-address'
+            autoCapitalize='none'
+          />
+        </View>
 
-      <View style={{marginBottom: 15}}>
-        <Text style={{marginBottom: 5, fontSize: 16}}>Password</Text>
-        <TextInput
-          style={{borderWidth: 1, borderColor: '#ccc', padding: 10, borderRadius: 5}}
-          placeholder="Enter your password"
-          secureTextEntry={true}
-        />
-      </View>
+        <View className='mb-4'>
+          <Text className='text-sm font-medium mb-2 text-gray-700 dark:text-gray-300'>
+            Password
+          </Text>
+          <TextInput
+            className='w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-slate-700 text-gray-800 dark:text-white'
+            placeholder='Enter your password'
+            placeholderTextColor='#9CA3AF'
+            secureTextEntry
+          />
+        </View>
 
-      <View style={{marginBottom: 20}}>
-        <Text style={{marginBottom: 5, fontSize: 16}}>Confirm Password</Text>
-        <TextInput
-          style={{borderWidth: 1, borderColor: '#ccc', padding: 10, borderRadius: 5}}
-          placeholder="Confirm your password"
-          secureTextEntry={true}
-        />
-      </View>
+        <View className='mb-6'>
+          <Text className='text-sm font-medium mb-2 text-gray-700 dark:text-gray-300'>
+            Confirm Password
+          </Text>
+          <TextInput
+            className='w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-slate-700 text-gray-800 dark:text-white'
+            placeholder='Confirm your password'
+            placeholderTextColor='#9CA3AF'
+            secureTextEntry
+          />
+        </View>
 
-      <TouchableOpacity
-        style={{backgroundColor: '#007bff', padding: 15, borderRadius: 5, alignItems: 'center'}}
-        onPress={() => {}}
-      >
-        <Text style={{color: 'white', fontSize: 16, fontWeight: 'bold'}}>Register</Text>
-      </TouchableOpacity>
-      
+        <TouchableOpacity className='w-full bg-blue-600 dark:bg-blue-500 p-3 rounded-lg mb-4'>
+          <Text className='text-white text-center font-semibold text-lg'>
+            Register
+          </Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity className='w-full' onPress={()=>router.push('/auth/login')}>
+          <Text className='text-blue-600 dark:text-blue-400 text-center'>
+            Already have an account? Sign In
+          </Text>
+        </TouchableOpacity>
+      </View>
+     
     </View>
   )
 }

@@ -3,22 +3,22 @@ import { Text, TextInput, TouchableOpacity, View } from 'react-native'
 
 const create = () => {
   return (
-    <View>
-      <View className="flex-1 p-4 bg-white">
-        <Text className="text-2xl font-bold mb-6 text-center">Create Post</Text>
+    
+      <View className="flex-1 p-4 h-full w-full justify-center  bg-white dark:bg-gray-950">
+        <Text className="text-2xl font-bold mb-6 text-black dark:text-blue-100 text-center">Create Post</Text>
         
         <View className="mb-4">
-          <Text className="text-lg font-semibold mb-2">Project Name</Text>
+          <Text className="text-lg font-semibold text-black dark:text-blue-100 mb-2">Project Name</Text>
           <TextInput
-            className="border border-gray-300 rounded-lg p-3 text-base"
+            className="border border-gray-300 rounded-lg text-black dark:text-blue-100 p-3 placeholder:text-gray-200 placeholder:dark:text-white/50 text-base"
             placeholder="Enter project name"
           />
         </View>
 
         <View className="mb-4">
-          <Text className="text-lg font-semibold mb-2">Project Description</Text>
+          <Text className="text-lg font-semibold mb-2 text-black dark:text-slate-100">Project Description</Text>
           <TextInput
-            className="border border-gray-300 rounded-lg p-3 text-base h-24"
+            className="border border-gray-300 rounded-lg p-3 text-base h-24 placeholder:text-gray-200 placeholder:dark:text-white/50"
             placeholder="Describe your project"
             multiline
             textAlignVertical="top"
@@ -26,7 +26,7 @@ const create = () => {
         </View>
 
         <View className="mb-4">
-          <Text className="text-lg font-semibold mb-2">Image</Text>
+          <Text className="text-lg font-semibold mb-2 text-slate-950 dark:text-slate-100">Image</Text>
           <View className="border border-gray-300 rounded-lg p-4 items-center">
             <TouchableOpacity className="bg-blue-500 px-4 py-2 rounded-lg mb-2">
               <Text className="text-white font-semibold">Upload Image</Text>
@@ -60,7 +60,6 @@ const create = () => {
         </TouchableOpacity>
       </View>
   
-    </View>
   )
 }
 

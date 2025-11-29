@@ -4,7 +4,7 @@ import { Text, View } from 'react-native'
 const profile = () => {
   return (
     <View>
-      <View className="flex-1 bg-white dark:bg-gray-900 p-4">
+      <View className="flex flex-col justify-center min-h-full min-w-full bg-white dark:bg-gray-900 p-4">
         {/* Header */}
         <View className="flex-row items-center justify-between mb-6">
           <Text className="text-2xl font-bold text-gray-900 dark:text-white">Profile</Text>

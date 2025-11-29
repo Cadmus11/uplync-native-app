@@ -42,3 +42,7 @@ module.exports = {
 // const config = getDefaultConfig(__dirname)
  
 // module.exports = withNativeWind(config, { input: './app/globals.css' })
+
+
+track
+ThemeProvider has errors

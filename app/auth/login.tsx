@@ -2,77 +2,79 @@ import { Google } from '@/assets/images'
 import { useRouter } from 'expo-router'
 import React from 'react'
 import { Text, TextInput, TouchableOpacity, View } from 'react-native'
-import { SafeAreaView } from 'react-native-safe-area-context'
 
 
 const Login = () => {
 
   const router = useRouter()
   return (
-    <SafeAreaView>
-       <View className='flex justify-center items-end bg-black w-full h-auto'>
-        <Text className='text-white text-lg mt-8 ' onPress={()=>router.push('/auth/register')}>
-          Sign Up
-        </Text>
-      </View>
-    <View className='flex flex-col justify-center   bg-black h-full p-8 gap-4 w-full items-center'>
-
-     
- <Text className='text-black text-white font-bold text-3xl'>
-Welcome Back
- </Text>
-
-<View className='flex flex-col w-full gap-2'>
-<Text className='text-white text-sm'>Email</Text>
- <TextInput
-  placeholder="Enter your email..."
-  className="w-full h-12 px-6 rounded-md
-             bg-white/10 dark:bg-slate-100/10
-             border border-gray-200 dark:border-gray-700
-             text-white 
-           
-             focus:border-purple-500 dark:focus:border-purple-400
-             focus:ring-4 focus:ring-purple-500/20 dark:focus:ring-purple-400/20
-             focus:bg-white dark:focus:bg-gray-900/80
-             backdrop-blur-sm
-             transition-all duration-300
-             text-base font-medium
-             shadow-sm dark:shadow-none"
-/>
-</View>
-<View className='flex flex-col w-full gap-2'>
-<Text className='text-white text-sm'>Password</Text>
- <TextInput
-  placeholder="Enter your password..."
-  className="w-full h-12 px-6 rounded-md
-             bg-white dark:bg-slate-100
-             border border-gray-200 dark:border-gray-700
-             text-gray-900 dark:text-gray-100
-             placeholder:text-gray-100 dark:placeholder:text-gray-100
-             focus:border-purple-500 dark:focus:border-purple-400
-             focus:ring-4 focus:ring-purple-500/20 dark:focus:ring-purple-400/20
-             focus:bg-white dark:focus:bg-gray-900/80
-             backdrop-blur-sm
-             transition-all duration-300
-             text-base font-medium
-             shadow-sm dark:shadow-none"
-/>
-</View>
-
-
-
- <TouchableOpacity className='w-full bg-[snow] h-[2.75rem] flex-center rounded-md text-slate-100' onPress={()=>router.push('/(tabs)/community')}>
-<Text className='text-slate-950 capitalize text-lg font-light'>login</Text>
- </TouchableOpacity>
-
-
-  <TouchableOpacity className='flex-center bg-white  w-full'>
-    <Google height={20} width={20} fill={'#000'}/>
-    <Text className='text-md font-semibold'> Sign in with Google</Text>
-  </TouchableOpacity>
+<>
+       <View className='flex justify-center items-center bg-slate-200 dark:bg-black w-full h-full'>
+        <TouchableOpacity 
+          onPress={() => router.push('/auth/register')}
+          className="self-end p-4  mt-12"
+        >
+          <Text className="text-slate-950 dark:text-gray-200 font-medium">Sign Up</Text>
+        </TouchableOpacity>
+        
+        <View className="flex-1 justify-center w-full gap-3 px-8 pb-20">
+          <Text className="text-black dark:text-gray-100 text-3xl font-bold text-center mb-8">
+            Welcome Back
+          </Text>
+          
+          <View className="flex flex-col gap-3">
+            <View>
+              <Text className="text-gray-900 dark:text-gray-400 mb-2 ml-1">Email</Text>
+              <TextInput
+                placeholder="Enter your email"
+                placeholderTextColor="#6B7280"
+                className="bg-gray-800 dark:bg-gray-900 text-white dark:text-gray-100 p-4 rounded-lg border border-gray-700 dark:border-gray-600"
+                keyboardType="email-address"
+                autoCapitalize="none"
+              />
+            </View>
+            
+            <View>
+              <Text className="text-gray-900 dark:text-gray-400 mb-2 ml-1">Password</Text>
+              <TextInput
+                placeholder="Enter your password"
+                placeholderTextColor="#6B7280"
+                className="bg-gray-800 dark:bg-gray-900 text-white dark:text-gray-100 p-4 rounded-lg border border-gray-700 dark:border-gray-600"
+                secureTextEntry
+              />
+            </View>
+            
+            <TouchableOpacity className="self-end" onPress={()=>router.push('/auth/reset')}>
+              <Text className="text-blue-700 dark:text-blue-300 text-sm">
+                Forgot Password?
+              </Text>
+            </TouchableOpacity>
+            
+            <TouchableOpacity className="bg-blue-600 dark:bg-blue-700 p-4 rounded-lg mt-4" onPress={()=>router.push('/community')}>
+              <Text className="text-white text-center font-semibold text-lg">
+                Login
+              </Text>
+            </TouchableOpacity>
+            
+            <View className="flex-row items-center my-1">
+              <View className="flex-1 h-px bg-gray-600 dark:bg-gray-700" />
+              <Text className="text-gray-400 dark:text-gray-500 mx-4">or</Text>
+              <View className="flex-1 h-px bg-gray-600 dark:bg-gray-700" />
+            </View>
+            
+            <TouchableOpacity className="bg-gray-800 dark:bg-gray-900 border border-gray-600 dark:border-gray-700 p-4 rounded-lg flex-row items-center justify-center">
+              <Google width={20} height={20} />
+              <Text className="text-white dark:text-gray-100 ml-3 font-medium">
+                Continue with Google
+              </Text>
+            </TouchableOpacity>
+          </View>
+        </View>
+  
 
     </View>
-    </SafeAreaView>
+    </>
+    
   )
 }
 

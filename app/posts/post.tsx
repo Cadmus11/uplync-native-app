@@ -1,7 +1,8 @@
 import React from 'react'
 import { Text, View } from 'react-native'
 
-const post = () => {
+const 
+Post = () => {
   return (
     <View>
       <View className="bg-white dark:bg-gray-800 rounded-lg shadow-md m-4 p-4">
@@ -57,5 +58,5 @@ const post = () => {
   )
 }
 
-export default post
+export default Post
 
