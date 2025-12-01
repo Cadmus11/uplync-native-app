@@ -7,9 +7,9 @@ const register = () => {
   const router = useRouter()
   return (
     <View className='flex flex-col p-4 justify-center items-center h-full bg-slate-200 dark:bg-slate-950 dark:text-white w-screen'>
-      <View className='w-full p-6 bg-white dark:bg-slate-800 rounded-lg shadow-lg'>
+      <View className='w-full p-4 bg-white dark:bg-transparent rounded-lg shadow-lg'>
         <Text className='text-2xl font-bold text-center mb-6 text-gray-800 dark:text-white'>
-          Register
+          Create New Account
         </Text>
         
         <View className='mb-4'>
