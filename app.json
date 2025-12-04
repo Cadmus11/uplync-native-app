@@ -1,11 +1,13 @@
 {
   "expo": {
-    "name": "Shard",
-    "scheme": "shard",
-    "slug": "shard",
+    "name": "Zentro",
+    "scheme": "zentro",
+    "slug": "Zentro",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/shard.png",
+  
+    "icon": "./assets/images/zentroo/front-image.jpg",
+    "backgroundColor": "#000000",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
@@ -34,12 +36,12 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/shard.png",
+          "image": "./assets/images/zentroo/front-image.jpg",
           "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#fff",
+          "resizeMode": "cover",
+          "backgroundColor": "#000000",
           "dark": {
-            "backgroundColor": "#def"
+            "backgroundColor": "#000000"
           }
         }
       ]
